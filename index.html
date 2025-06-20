@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smyrna Stewardship Local Business Directory</title>
+    <!-- Link to the favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Inter, a clean and modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Placeholder for the logo -->
+        <img src="assets/logo.png" alt="Smyrna Stewardship Logo" class="logo">
+        <h1>Smyrna Stewardship</h1>
+        <p>Your local business directory</p>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <!-- Search bar for filtering businesses by name or keyword -->
+            <input type="text" id="searchInput" placeholder="Search businesses by name or keyword..." class="search-input">
+            
+            <!-- Dropdown for filtering businesses by category -->
+            <select id="categoryFilter" class="category-filter">
+                <option value="">All Categories</option>
+                <!-- Categories will be populated dynamically by JavaScript -->
+            </select>
+        </section>
+
+        <!-- Loading indicator, hidden by default -->
+        <div id="loadingIndicator" class="loading-indicator">Loading businesses...</div>
+        
+        <!-- Message for when no businesses are found -->
+        <div id="noResultsMessage" class="no-results-message hidden">No businesses found matching your criteria.</div>
+
+        <!-- Container where business cards will be displayed -->
+        <section id="businessList" class="business-list"></section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Smyrna Stewardship. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to the JavaScript file, deferred to ensure HTML content is loaded first -->
+    <script src="script.js"></script>
+</body>
+</html>
+
